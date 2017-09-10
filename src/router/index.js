@@ -1,8 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/components/Home';
 
-import Hello from '@/components/Hello';
+import Home from '@/pages/Home';
+import Admin from '@/pages/Admin';
+import Cart from '@/pages/Cart';
+
+// import Hello from '@/components/Hello';
 
 Vue.use(Router);
 
@@ -12,8 +15,12 @@ export default new Router({
     name: 'Home',
     component: Home,
   }, {
-    path: '/hello',
-    name: 'Hello',
-    component: Hello,
+    path: '/admin',
+    name: 'Admin',
+    component: Admin,
+  }, {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart,
   }],
 });
